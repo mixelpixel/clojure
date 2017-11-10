@@ -5,11 +5,10 @@
 2. https://www.braveclojure.com/foreword/ √
 3. https://www.braveclojure.com/acknowledgements/ √
 4. https://www.braveclojure.com/introduction/ √
-  * https://www.nostarch.com/clojure/
-  * Book sample: [chapter 3](https://www.nostarch.com/download/Clojure%20for%20the%20Brave%20and%20True_sample_ch3.pdf)
-  * [Emacs for closure](https://github.com/flyingmachine/emacs-for-clojure/archive/book1.zip)
+  * Printed book sample: [chapter 3](https://www.nostarch.com/download/Clojure%20for%20the%20Brave%20and%20True_sample_ch3.pdf)
+  * ["Emacs Resources for Chapter 2"](https://github.com/flyingmachine/emacs-for-clojure/archive/book1.zip)
     * [GNU Emacs](https://www.gnu.org/software/emacs/)
-  * [Course Code](https://github.com/braveclojure/cftbat-code/)
+  * ["Clojure for the Brave and True" source code](https://github.com/braveclojure/cftbat-code/)
 
 ## Part I: Environment Setup
 > To stay motivated and learn efficiently, you need to actually write code and build executables. These chapters take you on a quick tour of the tools you’ll need to easily write programs. That way you can focus on learning Clojure, not fiddling with your environment.
