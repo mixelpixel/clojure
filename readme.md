@@ -1,13 +1,31 @@
 # Clojure
-1. https://www.braveclojure.com/
-2. https://www.braveclojure.com/foreword/
-3. https://www.braveclojure.com/acknowledgements/
-4. https://www.braveclojure.com/introduction/
-5. https://www.braveclojure.com/getting-started/
+1. https://www.braveclojure.com/ √
+2. https://www.braveclojure.com/foreword/ √
+3. https://www.braveclojure.com/acknowledgements/ √
+4. https://www.braveclojure.com/introduction/ √
+#### Course code
+  * https://www.nostarch.com/clojure/
+  * https://www.nostarch.com/download/Clojure%20for%20the%20Brave%20and%20True_sample_ch3.pdf
+  * https://github.com/flyingmachine/emacs-for-clojure/archive/book1.zip
+  * https://github.com/braveclojure/cftbat-code/
+
+## Part I: Environment Setup
+> To stay motivated and learn efficiently, you need to actually write code and build executables. These chapters take you on a quick tour of the tools you’ll need to easily write programs. That way you can focus on learning Clojure, not fiddling with your environment.
+
+## Chapter 1 - Building, Running, and the REPL √
+> There’s something powerful and motivating about getting a real program running. Once you can do that, you’re free to experiment, and you can actually share your work!
+
+> In this short chapter, you’ll invest a small amount of time to become familiar with a quick way to build and run Clojure programs. You’ll learn how to experiment with code in a running Clojure process using a read-eval-print loop (REPL). This will tighten your feedback loop and help you learn more efficiently.
+
+https://www.braveclojure.com/getting-started/
 
 ### Download the latest Java Developers Kit (JDK, it includes JRE - runtime env)
 - http://www.oracle.com/technetwork/java/javase/downloads/index.html
-#### Uninstalling Java9
+
+##### INSTAL JAVA SE
+- From: http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html
+- [JavaSE 9.0.1 JDK](http://download.oracle.com/otn-pub/java/jdk/9.0.1+11/jdk-9.0.1_osx-x64_bin.dmg)
+##### Uninstalling Java9
 - https://gist.github.com/schnell18/bcb9833f725be22f6acd01f94b486392
 ```
 sudo rm -fr /Library/Java/JavaVirtualMachines/jdk-9.jdk/
@@ -15,27 +33,90 @@ sudo rm -fr /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin
 sudo rm -fr /Library/PreferencePanes/JavaControlPanel.prefPane
 ```
 
-## INSTALLATION
-- From: http://www.oracle.com/technetwork/java/javase/downloads/index.html
-  * JavaSE 9.0.1 JDK
+##### INSTAL LEININGEN
 - `brew install leiningen`
+- NOTE: do NOT install per book instructions re: http://leiningen.org/ (see below)
+##### Uninstalling Leiningen
+- `brew uninstall leingingen`
+
+### First!
+`lein new app clojure-noob`
+```clojure
+(ns clojure-noob.core
+  (:gen-class))
+
+(defn -main
+  "I don't do a whole lot ... yet."
+  [& args]
+  (println "I'm a little teapot!"))
+```
+1. `lein run`
+2. `lein uberjar`
+3. `java -jar target/uberjar/clojure-noob-0.1.0-SNAPSHOT-standalone.jar`
+4. `lein repl`
+
+##### `vim`?
+http://mybuddymichael.com/writings/writing-clojure-with-vim-in-2013.html
+
+## Chapter 2 - How to Use Emacs, an Excellent Clojure Editor
+> A quick feedback loop is crucial for learning. In this chapter, I cover Emacs from the ground up to guarantee you have an efficient Emacs/Clojure workflow.
+
+https://www.braveclojure.com/basic-emacs/
+
+# Part II: Language Fundamentals
+> These chapters give you a solid foundation on which to continue learning Clojure. You’ll start by learning Clojure’s basics (syntax, semantics, and data structures) so you can do things. Then you’ll take a step back to examine Clojure’s most used functions in detail and learn how to solve problems with them using the functional programming mindset.
+
+## Chapter 3 - Do Things: A Clojure Crash Course
+> This is where you’ll start to really dig into Clojure. It’s also where you’ll need to close your windows because you’ll start shouting, “HOLY MOLEY THAT’S SPIFFY!” at the top of your lungs and won’t stop until you’ve hit this book’s index.
+
+> You’ve undoubtedly heard of Clojure’s awesome concurrency support and other stupendous features, but Clojure’s most salient characteristic is that it is a Lisp. You’ll explore this Lisp core, which is composed of two parts: functions and data.
+
+## Chapter 4 - Core Functions in Depth
+> In this chapter, you’ll learn about a couple of Clojure’s underlying concepts. This will give you the grounding you need to read the documentation for functions you haven’t used before and to understand what’s happening when you try them.
+
+> You’ll also see usage examples of the functions you’ll be reaching for the most. This will give you a solid foundation for writing your own code and for reading and learning from other people’s projects. And remember how I mentioned tracking glittery vampires? You’ll do that in this chapter (unless you already do it in your spare time).
+
+## Chapter 5 - Functional Programming
+> In this chapter, you’ll take your concrete experience with functions and data structures and integrate it with a new mindset: the functional programming mindset. You’ll show off your knowledge by constructing the hottest new game that’s sweeping the nation: Peg Thing!
+
+## Chapter 6 - Organizing Your Project: A Librarian’s Tale
+> This chapter explains what namespaces are and how to use them to organize your code. I don’t want to give away too much, but it also involves an international cheese thief.
+
+## Chapter 7 - Clojure Alchemy: Reading, Evaluation, and Macros
+> In this chapter, we’ll take a step back and describe how Clojure runs your code. This will give you the conceptual structure you need to truly understand how Clojure works and how it’s different from other, non-Lisp languages. With this structure in place, I’ll introduce the macro, one of the most powerful tools in existence.
+
+## Chapter 8 - Writing Macros
+> This chapter thoroughly examines how to write macros, starting with basic examples and advancing in complexity. You’ll close by donning your make-believe cap, pretending that you run an online potion store and using macros to validate customer orders.
+
+# Part III: Advanced Topics
+> These chapters cover Clojure’s extra-fun topics: concurrency, Java interop, and abstraction. Although you can write programs without understanding these tools and concepts, they’re intellectually rewarding and give you tremendous power as a programmer. One of the reasons people say that learning Clojure makes you a better programmer is that it makes the concepts covered in these chapters easy to understand and practical to use.
+
+## Chapter 9 - The Sacred Art of Concurrent and Parallel Programming
+> In this chapter, you’ll learn what concurrency and parallelism are and why they matter. You’ll learn about the challenges you’ll face when writing parallel programs and about how Clojure’s design helps to mitigate them. You’ll use futures, delays, and promises to safely write parallel programs.
+
+## Chapter 10 - Clojure Metaphysics: Atoms, Refs, Vars, and Cuddle Zombies
+> This chapter goes into great detail about Clojure’s approach to managing state and how that simplifies concurrent programming. You’ll learn how to use atoms, refs, and vars, three constructs for managing state, and you’ll learn how to do stateless parallel computation with pmap. And there will be cuddle zombies.
+
+## Chapter 11 - Mastering Concurrent Processes with core.async
+> In this chapter, you’ll ponder the idea that everything in the universe is a hot dog vending machine. By which I mean you’ll learn how to model systems of independently running processes that communicate with each other over channels using the core.async library.
+
+## Chapter 12 - Working with the JVM
+> This chapter is like a cross between a phrase book and cultural introduction to the Land of Java. It gives you an overview of what the JVM is, how it runs programs, and how to compile programs for it. It also gives you a brief tour of frequently used Java classes and methods, and explains how to interact with them from Clojure. More than that, it shows you how to think about and understand Java so you can incorporate any Java library into your Clojure program.
+
+## Chapter 13 - Creating and Extending Abstractions with Multimethods, Protocols, and Records
+> In Chapter 4 you learn that Clojure is written in terms of abstractions. This chapter serves as an introduction to the world of creating and implementing your own abstractions. You’ll learn the basics of multimethods, protocols, and records.
+
+## Appendix A: Building and Developing with Leiningen
+> This appendix clarifies some of the finer points of working with Leiningen, like what Maven is and how to figure out the version numbers of Java libraries so that you can use them.
+
+## Appendix B: Boot, the Fancy Clojure Build Framework
+> Boot is an alternative to Leiningen that provides the same functionally, but with the added bonus that it’s easier to extend and write composable tasks. This appendix explains Boot’s underlying concepts and guides you through writing your first tasks.
+
 
 ### Additional Clojure Resources
 - http://www.4clojure.com/problems
 - https://youtu.be/j-kj2qwJa_E
 - http://lambdaisland.com/
-
-### First!
-`lein new app clojure-noob`
-
-# Chapter 1
-https://www.braveclojure.com/getting-started/
-
-# Chapter 2
-https://www.braveclojure.com/basic-emacs/
-
-
-
 
 ***
 
