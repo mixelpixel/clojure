@@ -1,14 +1,21 @@
 # Clojure
+1. https://www.braveclojure.com/
+2. https://www.braveclojure.com/foreword/
+3. https://www.braveclojure.com/acknowledgements/
+4. https://www.braveclojure.com/introduction/
+5. https://www.braveclojure.com/getting-started/
 
-- https://www.braveclojure.com/
-- https://www.braveclojure.com/getting-started/
-
-### download the latest Java Runtime Environment (JRE)
+### Download the latest Java Developers Kit (JDK, it includes JRE - runtime env)
 - http://www.oracle.com/technetwork/java/javase/downloads/index.html
 #### Uninstalling Java9
 - https://gist.github.com/schnell18/bcb9833f725be22f6acd01f94b486392
+```
+sudo rm -fr /Library/Java/JavaVirtualMachines/jdk-9.jdk/
+sudo rm -fr /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin
+sudo rm -fr /Library/PreferencePanes/JavaControlPanel.prefPane
+```
 
-### INSTALL
+## INSTALLATION
 - From: http://www.oracle.com/technetwork/java/javase/downloads/index.html
   * JavaSE 9.0.1 JDK
 - `brew install leiningen`
@@ -21,7 +28,18 @@
 ### First!
 `lein new app clojure-noob`
 
-### install Leiningen the hard and unsuccessful way
+# Chapter 1
+https://www.braveclojure.com/getting-started/
+
+# Chapter 2
+https://www.braveclojure.com/basic-emacs/
+
+
+
+
+***
+
+### Installing Leiningen the hard and unsuccessful way
 - http://leiningen.org/
 1. Download the lein script (or on Windows lein.bat)
 2. Place it on your $PATH where your shell can find it (eg. ~/bin)
@@ -120,5 +138,3 @@ Caused by: java.lang.ClassNotFoundException: java/sql/Timestamp
 	at clojure.instant__init.<clinit>(Unknown Source)
 	... 23 more
 ```
-
-- Fuck this b.s.
