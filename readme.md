@@ -18,6 +18,8 @@
 - https://youtu.be/j-kj2qwJa_E
 - http://lambdaisland.com/
 
+### First!
+`lein new app clojure-noob`
 
 ### install Leiningen the hard and unsuccessful way
 - http://leiningen.org/
