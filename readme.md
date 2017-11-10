@@ -1,13 +1,15 @@
-# Clojure
+# CLOJURE for the BRAVE and TRUE
+## Learn the Ultimate Language and Become a Better Programmer
+### by Daniel Higginbotham
 1. https://www.braveclojure.com/ √
 2. https://www.braveclojure.com/foreword/ √
 3. https://www.braveclojure.com/acknowledgements/ √
 4. https://www.braveclojure.com/introduction/ √
-#### Course code
   * https://www.nostarch.com/clojure/
-  * https://www.nostarch.com/download/Clojure%20for%20the%20Brave%20and%20True_sample_ch3.pdf
-  * https://github.com/flyingmachine/emacs-for-clojure/archive/book1.zip
-  * https://github.com/braveclojure/cftbat-code/
+  * Book sample: [chapter 3](https://www.nostarch.com/download/Clojure%20for%20the%20Brave%20and%20True_sample_ch3.pdf)
+  * [Emacs for closure](https://github.com/flyingmachine/emacs-for-clojure/archive/book1.zip)
+    * [GNU Emacs](https://www.gnu.org/software/emacs/)
+  * [Course Code](https://github.com/braveclojure/cftbat-code/)
 
 ## Part I: Environment Setup
 > To stay motivated and learn efficiently, you need to actually write code and build executables. These chapters take you on a quick tour of the tools you’ll need to easily write programs. That way you can focus on learning Clojure, not fiddling with your environment.
@@ -35,7 +37,7 @@ sudo rm -fr /Library/PreferencePanes/JavaControlPanel.prefPane
 
 ##### INSTAL LEININGEN
 - `brew install leiningen`
-- NOTE: do NOT install per book instructions re: http://leiningen.org/ (see below)
+- NOTE: do NOT install per book instructions re: http://leiningen.org/ ([see below](#installing-leiningen-the-hard-and-unsuccessful-way))
 ##### Uninstalling Leiningen
 - `brew uninstall leingingen`
 
@@ -55,7 +57,7 @@ sudo rm -fr /Library/PreferencePanes/JavaControlPanel.prefPane
 3. `java -jar target/uberjar/clojure-noob-0.1.0-SNAPSHOT-standalone.jar`
 4. `lein repl`
 
-##### `vim`?
+### Emacs not your cup of tea? Try [Vim](http://www.vim.org/)!
 http://mybuddymichael.com/writings/writing-clojure-with-vim-in-2013.html
 
 ## Chapter 2 - How to Use Emacs, an Excellent Clojure Editor
