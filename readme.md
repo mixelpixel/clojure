@@ -14,6 +14,8 @@
 ## Part I: Environment Setup
 > To stay motivated and learn efficiently, you need to actually write code and build executables. These chapters take you on a quick tour of the tools you’ll need to easily write programs. That way you can focus on learning Clojure, not fiddling with your environment.
 
+NOTE: 11/2017, macOS High Sierra, 11" 2012 AirBook, 2GHz i7, 8GB RAM.
+
 ## Chapter 1 - Building, Running, and the REPL √
 > There’s something powerful and motivating about getting a real program running. Once you can do that, you’re free to experiment, and you can actually share your work!
 
