@@ -140,6 +140,7 @@ https://www.braveclojure.com/appendix-b/
 - http://www.4clojure.com/problems
 - https://youtu.be/j-kj2qwJa_E
 - http://lambdaisland.com/
+- https://github.com/ahrjarrett/clojure-brave
 
 ***
 
