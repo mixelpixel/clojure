@@ -123,7 +123,7 @@ https://www.braveclojure.com/basic-emacs/
 ***
 
 ### Installing Leiningen the hard and unsuccessful way
-- http://leiningen.org/
+- Per: http://leiningen.org/
 1. Download the lein script (or on Windows lein.bat)
 2. Place it on your $PATH where your shell can find it (eg. ~/bin)
 3. Set it to be executable (chmod a+x ~/bin/lein)
@@ -221,3 +221,4 @@ Caused by: java.lang.ClassNotFoundException: java/sql/Timestamp
 	at clojure.instant__init.<clinit>(Unknown Source)
 	... 23 more
 ```
+- Possibly this was the result of installing the JAVA SE JRE instead of JDK, but whatevs... JDK + `brew install leiningen`... much easier!
