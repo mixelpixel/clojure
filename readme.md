@@ -65,6 +65,11 @@ http://mybuddymichael.com/writings/writing-clojure-with-vim-in-2013.html
 https://www.braveclojure.com/basic-emacs/
 > A quick feedback loop is crucial for learning. In this chapter, I cover Emacs from the ground up to guarantee you have an efficient Emacs/Clojure workflow.
 
+- http://emacsformacosx.com/
+- https://www.gnu.org/software/emacs/
+- https://www.gnu.org/software/emacs/download.html#macos
+
+
 # Part II: Language Fundamentals
 > These chapters give you a solid foundation on which to continue learning Clojure. You’ll start by learning Clojure’s basics (syntax, semantics, and data structures) so you can do things. Then you’ll take a step back to examine Clojure’s most used functions in detail and learn how to solve problems with them using the functional programming mindset.
 
@@ -141,6 +146,9 @@ https://www.braveclojure.com/appendix-b/
 - https://youtu.be/j-kj2qwJa_E
 - http://lambdaisland.com/
 - https://github.com/ahrjarrett/clojure-brave
+
+## Build Electron Apps with Clojure
+- https://github.com/Gonzih/cljs-electron
 
 ***
 
